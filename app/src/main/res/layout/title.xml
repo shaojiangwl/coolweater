@@ -5,6 +5,15 @@
     android:layout_width="match_parent"
     android:layout_height="?attr/actionBarSize">
 
+    <Button
+        android:id="@+id/nav_button"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:background="@drawable/listview"
+        android:layout_marginLeft="10dp"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"/>
+
     <!--天气标题布局文件，放了两个TextView用于显示城市名称（居中），和更新日期时间（靠右）-->
 
     <TextView

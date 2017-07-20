@@ -12,6 +12,20 @@
         android:scaleType="centerCrop"/>
 
 
+    <android.support.v4.widget.DrawerLayout
+        android:id="@+id/drawer_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+
+    <android.support.v4.widget.SwipeRefreshLayout
+
+        android:id="@+id/swipe_refresh"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:scrollbars="none"
+        android:overScrollMode="never">
     <!--天气布局文件，需要包含其他分散布局文件-->
 
     <!--使用include引入其他分散布局文件-->
@@ -43,4 +57,15 @@
 
     </ScrollView>
 
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+        <fragment
+            android:id="@+id/choose_area_fragment"
+            android:name="com.coolweather.android.fragment.ChooseAreaFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="start"/>
+
+
+    </android.support.v4.widget.DrawerLayout>
 </FrameLayout>
